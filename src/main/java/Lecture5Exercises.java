@@ -1,3 +1,5 @@
+import java.util.Random;
+
 public class Lecture5Exercises {
 
     /*
@@ -6,7 +8,13 @@ public class Lecture5Exercises {
      *   lecture 5 page 14
      */
     public String weakPassword(int length) {
-        return null;
+        StringBuilder password= new StringBuilder();
+        Random random = new Random();
+        for(int i =1 ; i<= length ;i++)
+        {
+            password.append((char) (random.nextInt(26) + 'a'));
+        }
+        return password.toString();
     }
 
     /*
@@ -15,7 +23,27 @@ public class Lecture5Exercises {
      *   lecture 5 page 14
      */
     public String strongPassword(int length) throws Exception {
-        return null;
+        if(length<3)
+        {
+            throw new Exception();
+        }
+        StringBuilder password= new StringBuilder();
+        Random random = new Random();
+        password.append((char) (random.nextInt(10)+'0'));
+        password.append((char) (random.nextInt(15)+'!'));
+        password.append((char) (random.nextInt(26)+'a'));
+        for(int i =3 ; i< length ;i++)
+        {
+            int type = random.nextInt(3)+2;
+            char cha = switch (type) {
+                case 2 -> (char) (random.nextInt(26) + 'a');
+                case 3 -> (char) (random.nextInt(10) + '0');
+                case 4 -> (char) (random.nextInt(15) + '!');
+                default -> ' ';
+            };
+            password.append(cha);
+        }
+        return password.toString();
     }
 
     /*
@@ -27,6 +55,15 @@ public class Lecture5Exercises {
      *   lecture 5 page 17
      */
     public boolean isFiboBin(int n) {
+        long n1=0,n2=1,n3=1;
+        while(n3<=n)
+        {
+            n3=n2+n1;
+            n1=n2;
+            n2=n3;
+            if(n3 + Long.bitCount(n3) == n)
+                return true;
+        }
         return false;
     }
 }

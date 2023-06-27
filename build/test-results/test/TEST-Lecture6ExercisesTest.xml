@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="Lecture6ExercisesTest" tests="11" skipped="0" failures="0" errors="0" timestamp="2023-04-14T11:20:15" hostname="DESKTOP-8BNAU0H" time="0.027">
+  <properties/>
+  <testcase name="matrixProduct()" classname="Lecture6ExercisesTest" time="0.013"/>
+  <testcase name="primeFactorsOne()" classname="Lecture6ExercisesTest" time="0.001"/>
+  <testcase name="calculateEvenSumBig()" classname="Lecture6ExercisesTest" time="0.001"/>
+  <testcase name="calculateEvenSumOdd()" classname="Lecture6ExercisesTest" time="0.001"/>
+  <testcase name="reverseArray()" classname="Lecture6ExercisesTest" time="0.002"/>
+  <testcase name="primeFactorsSample()" classname="Lecture6ExercisesTest" time="0.0"/>
+  <testcase name="calculateEvenSumEven()" classname="Lecture6ExercisesTest" time="0.0"/>
+  <testcase name="arrayToList()" classname="Lecture6ExercisesTest" time="0.0"/>
+  <testcase name="matrixProductWrong()" classname="Lecture6ExercisesTest" time="0.001"/>
+  <testcase name="primeFactorsPrime()" classname="Lecture6ExercisesTest" time="0.001"/>
+  <testcase name="extractWord()" classname="Lecture6ExercisesTest" time="0.001"/>
+  <system-out><![CDATA[]]></system-out>
+  <system-err><![CDATA[]]></system-err>
+</testsuite>

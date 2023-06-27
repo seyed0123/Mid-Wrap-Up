@@ -36,7 +36,6 @@ public class Lecture5ExercisesTest {
         assertEquals(3, output.length());
         assertTrue(checkStrongPass(output));
     }
-
     @Test
     void strongPasswordBadLength() {
         assertThrows(Exception.class, () -> el5.strongPassword(2));
@@ -64,7 +63,7 @@ public class Lecture5ExercisesTest {
 
     @Test
     void isFiboBinFalse() {
-        assertFalse(el5.isFiboBin(3));
+        assertFalse(el5.isFiboBin(4));
     }
 
 }
